@@ -1,0 +1,52 @@
+body{
+    font-family: 'Spartan', sans-serif !important;
+}
+
+.lightPink{
+    background-color: #faeee7;
+}
+
+.brilliantPink{
+    background-color: #f54291;
+}
+
+.lightBlue{
+    background-color: #ddf4fb;
+}
+
+.darkerBlue{
+    background-color: #0a97b0;
+}
+
+.gradient{
+    background: rgb(245,66,145) !important; 
+    background: -moz-linear-gradient(126deg, rgba(245,66,145,1) 0%, rgba(0,81,201,1) 100%, rgba(13,84,200,1) 100%, rgba(0,0,0,1) 100%) !important;
+    background: -webkit-linear-gradient(126deg, rgba(245,66,145,1) 0%, rgba(0,81,201,1) 100%, rgba(13,84,200,1) 100%, rgba(0,0,0,1) 100%) !important;
+    background: linear-gradient(126deg, rgba(245,66,145,1) 0%, rgba(0,81,201,1) 100%, rgba(13,84,200,1) 100%, rgba(0,0,0,1) 100%) !important;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#f54291",endColorstr="#000000",GradientType=1) !important;
+}
+
+.nav-link{
+    color:white !important;
+}
+
+.navbar-brand{
+    color:aliceblue !important;
+}
+
+.footerText{
+    color: white !important;
+}
+
+a{
+    color:inherit !important;
+    text-decoration: underline;
+}
+
+.nav-link, .navbar-brand{
+    text-decoration: none !important;
+}
+
+.nav-link:hover, .navbar-brand:hover{
+    color: #d9cbff !important;
+}

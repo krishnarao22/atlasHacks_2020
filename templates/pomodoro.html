@@ -1,0 +1,70 @@
+{% extends "layout.html" %}
+
+{% block title %}
+Pomodoro Timer
+{% endblock %}
+
+{% block links %}
+<link type="text/css" rel="stylesheet" href="../static/css/pom.css">
+{% endblock %}
+
+{% block main %}
+
+<!-- Timer credit Mateusz Rybczonec -->
+
+<div class="container-fluid pb-5">
+    <div class="container-fluid p-5 mt-3 d-flex justify-content-center">
+        <h1>Pomodoro Timer</h1>
+    </div>
+    <div class="container-fluid p-5 mb-2 d-flex justify-content-center">
+        <div id="app"></div>        
+    </div>
+    <div class="container-fluid p-5 d-flex justify-content-center">
+        <button type="button" class="btn btn-primary p-3" data-toggle="modal" data-target="#pomModal">
+            What's this?
+        </button>
+    </div>
+    <div class="container-fluid d-flex justify-content-center">
+        <h4 class="Timer Cues"></h4>
+    </div>
+    <div class="container-fluid d-flex justify-content-center mt-3">
+        <div class="container-fluid d-flex justify-content-center col-5">
+            <div class="container">
+                <div class="colorBox green"></div>
+                <p class="ml-0 mt-2"> > 50% of time left</p>
+            </div>
+            <div class="container">
+                <div class="colorBox orange"></div>
+                <p class="ml-0 mt-2"> > 15% of time left</p>
+            </div>
+            <div class="container">
+                <div class="colorBox red"></div>
+                <p class="ml-0 mt-2"> < 15% of time left</p>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Modal -->
+<div class="modal fade" id="pomModal" tabindex="-1" role="dialog" aria-labelledby="pomModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="pomModalLabel">Modal title</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <p>The <a target="_blank" href="https://en.wikipedia.org/wiki/Pomodoro_Technique">Pomodoro Technique</a> is a time-management technique where you break your work down into short intervals.</p>
+        <p>You set a timer for a fixed amount of time, and you work until the timer runs out. Once the timer runs out, you take a short break!</p>
+        <p>I've found this technique very useful, and it's definitely boosted my productivity.</p>
+        <p class="pt-4"><strong>The recommended time interval is 25 minutes. For now, the timer is fixed to that!</strong></p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script src="../static/js/pom.js"></script>
+
+{% endblock %}
